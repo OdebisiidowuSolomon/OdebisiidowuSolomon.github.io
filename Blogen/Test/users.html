@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogen</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../ionicons-2.0.1/ionicons-2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="icon"
+      href="../project_images/blogen/application-job-form.jpeg"
+    />
+  </head>
+  <body data-spy="scroll" data-target="#main-nav" id="home">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"> Blogen </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="index.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="users.html" class="nav-link active">Users</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-3">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="ion-person"></i> Welcome Solomon
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="ion-ios-person"></i> Profile
+                </a>
+                <a href="settings.html" class="dropdown-item">
+                  <i class="ion-gear-b"></i> Settings
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="ion-person-stalker"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header id="main-header" class="py-2 bg-warning text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2><i class="ion-ios-people"></i> Users</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Search -->
+
+    <section id="search" class="py-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search Users..."
+              />
+              <button class="input-group-append btn btn-warning">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Users -->
+
+    <section id="users">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h4>Latest Users</h4>
+              </div>
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>JDoe@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Harry White</td>
+                    <td>HarryW@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Mary Johnson</td>
+                    <td>Mary@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Jeff Bezos</td>
+                    <td>Jeff@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Mark Zuckerberg</td>
+                    <td>Mark@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Harry Winks</td>
+                    <td>Winks@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Willain Kane</td>
+                    <td>Kane@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Larry Page</td>
+                    <td>Larry@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Tony Stark</td>
+                    <td>Stark@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Bill Gates</td>
+                    <td>Bill@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>ELon Musk</td>
+                    <td>Musk@gmail.com</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="ion-ios-arrow-forward"></i
+                        ><i class="ion-ios-arrow-forward"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer  -->
+
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
+              Copyright &copy; <span id="year"></span> Blogen Made With Love
+              Solomon
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script>
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
