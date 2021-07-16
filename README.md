@@ -22,4 +22,15 @@
 
 > snake-game -> https://odebisiidowusolomon.github.io/snake-game
 
-> Each Is Hosted You Just Need To specify the folder name after The Link https://odebisiidowusolomon.github.io/ + < folder-name >
+> whack-a-mole -> https://odebisiidowusolomon.github.io/whack-a-mole
+
+> frogger  -> https://odebisiidowusolomon.github.io/frogger
+
+> connect-four -> https://odebisiidowusolomon.github.io/connect-four
+
+> memory-game -> https://odebisiidowusolomon.github.io/memory-game
+
+> space-invader -> https://odebisiidowusolomon.github.io/space-invader
+
+> tetris-game -> https://odebisiidowusolomon.github.io/tetris-game
+
