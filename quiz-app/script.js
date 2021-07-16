@@ -21,7 +21,7 @@ const quizData = [
     b: "Donald Trump",
     c: "Joe Biden",
     d: "Hillary Cliton",
-    correct: "b",
+    correct: "c",
   },
   {
     question: "What does HTML stands for",
