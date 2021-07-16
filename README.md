@@ -20,4 +20,6 @@
 
 > weather-app -> https://odebisiidowusolomon.github.io/weather-app
 
+> snake-game -> https://odebisiidowusolomon.github.io/snake-game
+
 > Each Is Hosted You Just Need To specify the folder name after The Link https://odebisiidowusolomon.github.io/ + < folder-name >
