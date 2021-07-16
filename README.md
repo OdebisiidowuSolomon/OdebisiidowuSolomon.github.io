@@ -32,5 +32,3 @@
 
 > space-invader -> https://odebisiidowusolomon.github.io/space-invader
 
-> tetris-game -> https://odebisiidowusolomon.github.io/tetris-game
-
