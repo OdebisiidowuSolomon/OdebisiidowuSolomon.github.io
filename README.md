@@ -19,3 +19,5 @@
 > todo_app -> https://odebisiidowusolomon.github.io/todo_app
 
 > weather-app -> https://odebisiidowusolomon.github.io/weather-app
+
+> Each Is Hosted You Just Need To specify the folder name after The Link https://odebisiidowusolomon.github.io/ + < folder-name >
