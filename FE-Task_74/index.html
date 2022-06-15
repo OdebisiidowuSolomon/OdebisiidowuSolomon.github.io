@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Task 74</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --Red: hsl(0 100% 74%);
+        --Green: hsl(154, 59%, 51%);
+        --Blue: hsl(248, 32%, 49%);
+        --Dark_Blue: hsl(249, 10%, 26%);
+        --Grayish_Blue: hsl(246, 25%, 77%);
+        --white: #fff;
+      }
+
+      body {
+        background-image: linear-gradient(
+            to bottom,
+            hsl(0 100% 74%/68%),
+            hsl(0 100% 74%/68%)
+          ),
+          url("./images/bg-intro-desktop.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: var(--white);
+      }
+      .container {
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+      }
+      .left {
+        flex: 0.45;
+        padding: 0 1rem;
+        font-size: 1.1rem;
+      }
+      .left h2 {
+        font-size: 3.3rem;
+        margin-bottom: 1rem;
+        line-height: 3rem;
+      }
+
+      .right {
+        flex: 0.55;
+        display: flex;
+        flex-flow: column;
+      }
+
+      .right__top {
+        padding: 1rem 4rem;
+        text-align: center;
+        border-radius: 10px;
+        background-color: var(--Blue);
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 8px 1px 0px rgb(0 0 0 / 24%);
+      }
+
+      .right__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        border-radius: 10px;
+        padding: 2rem;
+      }
+
+      .right__bottom input {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        margin-bottom: 0.8rem;
+        box-sizing: border-box;
+        border: 2px solid #eee;
+        border-radius: 5px;
+        background-position: 96%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: var(--Blue);
+      }
+
+      button {
+        width: 100%;
+        padding: 1.1rem 1rem;
+        margin-bottom: 0.8rem;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        background-color: var(--Green);
+        color: var(--white);
+        box-shadow: 0px 4px 0px 0px #888;
+      }
+
+      .right__bottom p {
+        font-size: 0.7rem;
+        margin: auto;
+        text-align: center;
+        color: #eee;
+        color: #ccc;
+      }
+
+      .right__bottom a {
+        color: var(--Red);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      @media (max-width: 437px) {
+        .right__top {
+          margin-top: 1.3rem;
+          padding: 1rem;
+        }
+        .container {
+          flex-flow: column;
+          width: 80%;
+          height: auto;
+          flex-wrap: wrap;
+          padding: 3rem 0;
+        }
+
+        .left h2 {
+          font-size: 1.8rem;
+        }
+
+        .left {
+          padding: 0;
+          text-align: center;
+        }
+        button {
+          padding: 1rem;
+        }
+
+        .right__bottom {
+          box-shadow: 0px 6px 0px 0px rgb(0 0 0 / 24%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h2>Learn to code by watching others</h2>
+        <p>
+          See how experienced developers solve problems in real-time Watchimg
+          scripted tutorials is great, but understanding how developers think is
+          invaluable
+        </p>
+      </div>
+      <div class="right">
+        <div class="right__top">
+          <b>Try it free 7 days</b> then $20/mo. thereafter
+        </div>
+        <div class="right__bottom">
+          <form id="form" onsubmit="submit">
+            <input name="first_name" type="text" placeholder="First Name" />
+            <input name="last_name" type="text" placeholder="Last Name" />
+            <input name="email" type="email" placeholder="Email Address" />
+            <input name="password" type="password" placeholder="Password" />
+            <button>CLAIM YOUR FREE TRAIL</button>
+          </form>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span><a href="#">Terms and Service</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const { first_name, last_name, password, email } = form;
+        const error_style =
+          "background-image: url('./images/icon-error.svg'); background-repeat:no-repeat; border-color:hsl(0 100% 74%)";
+        const no_error =
+          "background-image: none; background-repeat:no-repeat; border-color:#eee";
+        first_name.value.trim() === ""
+          ? (first_name.style = error_style)
+          : (first_name.style = no_error);
+
+        last_name.value.trim() === ""
+          ? (last_name.style = error_style)
+          : (last_name.style = no_error)
+          
+          (password.value.trim() === "")
+              ? (password.style = error_style)
+              : (password.style = no_error);
+
+        email.value.trim() === ""
+          ? (email.style = error_style)
+          : (email.style = no_error);
+
+        password.value.trim() === ""
+          ? (password.style = error_style)
+          : (password.style = no_error);
+
+        console.log(password.value)
+
+      });
+    </script>
+  </body>
+</html>
