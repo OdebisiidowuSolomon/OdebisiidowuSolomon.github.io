@@ -34,8 +34,8 @@
       body {
         background-image: linear-gradient(
             to bottom,
-            hsl(0 100% 74%/68%),
-            hsl(0 100% 74%/68%)
+            hsl(0 100% 74%/59%),
+            hsl(0 100% 74%/59%)
           ),
           url("./images/bg-intro-desktop.png");
         display: flex;
@@ -61,9 +61,9 @@
         font-size: 1.1rem;
       }
       .left h2 {
-        font-size: 3.3rem;
-        margin-bottom: 1rem;
-        line-height: 3rem;
+        font-size: 2.8rem;
+        margin-bottom: 1.3rem;
+        line-height: 3.3rem;
       }
 
       .right {
@@ -85,7 +85,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
         background-color: var(--white);
         border-radius: 10px;
         padding: 2.5rem;
@@ -134,7 +133,7 @@
         font-weight: 600;
         background-color: var(--Green);
         color: var(--white);
-        box-shadow: 0px 3px 0px 0px #888;
+        box-shadow: 0px 3px 0px 0px #666;
       }
 
       button:hover {
@@ -156,6 +155,16 @@
       }
 
       @media (max-width: 437px) {
+
+        body {
+          background-image: linear-gradient(
+            to bottom,
+            hsl(0 100% 74%/49%),
+            hsl(0 100% 74%/49%)
+          ),
+          url("./images/bg-intro-mobile.png");
+        }
+
         .right__top {
           margin-top: 1.3rem;
           padding: 1rem;
