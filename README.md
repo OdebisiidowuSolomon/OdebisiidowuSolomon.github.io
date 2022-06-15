@@ -32,4 +32,4 @@
 
 > space-invader -> https://odebisiidowusolomon.github.io/space-invader
 
-> Blogen -> https://odebisiidowusolomon.github.io/FE-Task_74/
+> FE-Task_74 -> https://odebisiidowusolomon.github.io/FE-Task_74/
