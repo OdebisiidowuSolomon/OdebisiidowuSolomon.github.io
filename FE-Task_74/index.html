@@ -78,16 +78,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         background-color: var(--white);
         border-radius: 10px;
-        padding: 2rem;
+        padding: 2.5rem;
+      }
+
+      .input__container {
+        margin-bottom: 0.8rem;
+        text-align: end;
+      }
+
+      form span {
+        font-size: 0.8rem;
+        color: var(--Red);
+        display: none;
       }
 
       .right__bottom input {
         width: 100%;
         padding: 1rem 1.5rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.5rem;
         box-sizing: border-box;
         border: 2px solid #eee;
         border-radius: 5px;
@@ -98,6 +109,11 @@
       input:focus {
         outline: none;
         border-color: var(--Blue);
+      }
+
+      input::placeholder {
+        color: var(--color, gray);
+        opacity: var(--show, 1);
       }
 
       button {
@@ -174,10 +190,22 @@
         </div>
         <div class="right__bottom">
           <form id="form" onsubmit="submit">
-            <input name="first_name" type="text" placeholder="First Name" />
-            <input name="last_name" type="text" placeholder="Last Name" />
-            <input name="email" type="email" placeholder="Email Address" />
-            <input name="password" type="password" placeholder="Password" />
+            <div class="input__container">
+              <input name="first_name" type="text" placeholder="First Name" />
+              <span id="span__first_name"><em>First Name cannot be empty</em></span>
+            </div>
+            <div class="input__container">
+              <input name="last_name" type="text" placeholder="Last Name" />
+              <span id="span__last_name"><em>Last Name cannot be empty</em></span>
+            </div>
+            <div class="input__container">
+              <input name="email" type="email" placeholder="Email Address" />
+              <span id="span__email"><em>Looks like this is not an email</em></span>
+            </div>
+            <div class="input__container">
+              <input name="password" type="password" placeholder="Password" />
+              <span id="span__password"><em>Password cannot be empty</em></span>
+            </div>
             <button>CLAIM YOUR FREE TRAIL</button>
           </form>
           <p>
@@ -190,29 +218,61 @@
 
     <script>
       const form = document.getElementById("form");
+      const span__first_name = document.querySelector('#span__first_name');
+      const span__last_name = document.querySelector('#span__last_name');
+      const span__password= document.querySelector('#span__password');
+      const span__email= document.querySelector('#span__email');
+
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         const { first_name, last_name, password, email } = form;
+
         const error_style =
           "background-image: url('./images/icon-error.svg'); background-repeat:no-repeat; border-color:hsl(0 100% 74%)";
         const no_error =
           "background-image: none; background-repeat:no-repeat; border-color:#eee";
-        first_name.value.trim() === ""
-          ? (first_name.style = error_style)
-          : (first_name.style = no_error);
 
-        last_name.value.trim() === ""
-          ? (last_name.style = error_style)
-          : (last_name.style = no_error);
-          
-          password.value.trim() === "" ? (password.style = error_style) : (password.style = no_error);
+        first_name.value.trim() !== "" && (first_name.style = no_error) && (span__first_name.style.display = 'none');
 
-        email.value.trim() === ""
-          ? (email.style = error_style)
-          : (email.style = no_error);
+        last_name.value.trim() !== "" && (last_name.style = no_error) && (span__last_name.style.display = 'none');;
 
-        console.log(password.value)
+        password.value.trim() !== "" && (password.style = no_error) && (span__password.style.display = 'none');;
 
+        email.value.trim() !== "" && (email.style = no_error) && (span__email.style.display = 'none');;
+
+        if (email.value.trim() === "") {
+          email.style =
+            "background-image: url('./images/icon-error.svg'); background-repeat:no-repeat; border-color:hsl(0 100% 74%);";
+          email.placeholder = "email@example/com";
+          document
+            .querySelector("input[name=email]")
+            .style.setProperty("--color", "red");
+            span__email.style.display = 'block'
+        }
+
+        if (first_name.value.trim() === "") {
+          first_name.style = error_style;
+          document
+            .querySelector("input[name=first_name]")
+            .style.setProperty("--show", 0);
+          span__first_name.style.display = 'block'
+        }
+        if (last_name.value.trim() === "") {
+          last_name.style = error_style;
+          document
+            .querySelector("input[name=last_name]")
+            .style.setProperty("--show", 0);
+                      span__last_name.style.display = 'block'
+        }
+        if (password.value.trim() === "") {
+          password.style = error_style;
+          document
+            .querySelector("input[name=password]")
+            .style.setProperty("--show", 0);
+                      span__password.style.display = 'block'
+        }
+
+        console.log(password.value);
       });
     </script>
   </body>
