@@ -9,6 +9,12 @@
       href="./images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
     <title>Task 74</title>
     <style>
       * {
@@ -37,6 +43,7 @@
         align-items: center;
         font-size: 16px;
         color: var(--white);
+        font-family: 'Poppins', sans-serif;
       }
       .container {
         height: 100vh;
@@ -71,7 +78,7 @@
         border-radius: 10px;
         background-color: var(--Blue);
         margin-bottom: 1.5rem;
-        box-shadow: 0px 8px 1px 0px rgb(0 0 0 / 24%);
+        box-shadow: 0px 8px 1px 0px rgb(0 0 0 / 14%);
       }
 
       .right__bottom {
@@ -82,6 +89,7 @@
         background-color: var(--white);
         border-radius: 10px;
         padding: 2.5rem;
+        box-shadow: 0px 6px 0px 0px rgb(0 0 0 / 24%)
       }
 
       .input__container {
@@ -126,7 +134,11 @@
         font-weight: 600;
         background-color: var(--Green);
         color: var(--white);
-        box-shadow: 0px 4px 0px 0px #888;
+        box-shadow: 0px 3px 0px 0px #888;
+      }
+
+      button:hover {
+        cursor: pointer;
       }
 
       .right__bottom p {
@@ -167,10 +179,6 @@
         button {
           padding: 1rem;
         }
-
-        .right__bottom {
-          box-shadow: 0px 6px 0px 0px rgb(0 0 0 / 24%);
-        }
       }
     </style>
   </head>
@@ -181,7 +189,7 @@
         <p>
           See how experienced developers solve problems in real-time Watchimg
           scripted tutorials is great, but understanding how developers think is
-          invaluable
+          invaluable.
         </p>
       </div>
       <div class="right">
@@ -192,15 +200,21 @@
           <form id="form" onsubmit="submit">
             <div class="input__container">
               <input name="first_name" type="text" placeholder="First Name" />
-              <span id="span__first_name"><em>First Name cannot be empty</em></span>
+              <span id="span__first_name"
+                ><em>First Name cannot be empty</em></span
+              >
             </div>
             <div class="input__container">
               <input name="last_name" type="text" placeholder="Last Name" />
-              <span id="span__last_name"><em>Last Name cannot be empty</em></span>
+              <span id="span__last_name"
+                ><em>Last Name cannot be empty</em></span
+              >
             </div>
             <div class="input__container">
               <input name="email" type="email" placeholder="Email Address" />
-              <span id="span__email"><em>Looks like this is not an email</em></span>
+              <span id="span__email"
+                ><em>Looks like this is not an email</em></span
+              >
             </div>
             <div class="input__container">
               <input name="password" type="password" placeholder="Password" />
@@ -218,10 +232,10 @@
 
     <script>
       const form = document.getElementById("form");
-      const span__first_name = document.querySelector('#span__first_name');
-      const span__last_name = document.querySelector('#span__last_name');
-      const span__password= document.querySelector('#span__password');
-      const span__email= document.querySelector('#span__email');
+      const span__first_name = document.querySelector("#span__first_name");
+      const span__last_name = document.querySelector("#span__last_name");
+      const span__password = document.querySelector("#span__password");
+      const span__email = document.querySelector("#span__email");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -232,13 +246,21 @@
         const no_error =
           "background-image: none; background-repeat:no-repeat; border-color:#eee";
 
-        first_name.value.trim() !== "" && (first_name.style = no_error) && (span__first_name.style.display = 'none');
+        first_name.value.trim() !== "" &&
+          (first_name.style = no_error) &&
+          (span__first_name.style.display = "none");
 
-        last_name.value.trim() !== "" && (last_name.style = no_error) && (span__last_name.style.display = 'none');;
+        last_name.value.trim() !== "" &&
+          (last_name.style = no_error) &&
+          (span__last_name.style.display = "none");
 
-        password.value.trim() !== "" && (password.style = no_error) && (span__password.style.display = 'none');;
+        password.value.trim() !== "" &&
+          (password.style = no_error) &&
+          (span__password.style.display = "none");
 
-        email.value.trim() !== "" && (email.style = no_error) && (span__email.style.display = 'none');;
+        email.value.trim() !== "" &&
+          (email.style = no_error) &&
+          (span__email.style.display = "none");
 
         if (email.value.trim() === "") {
           email.style =
@@ -247,7 +269,7 @@
           document
             .querySelector("input[name=email]")
             .style.setProperty("--color", "red");
-            span__email.style.display = 'block'
+          span__email.style.display = "block";
         }
 
         if (first_name.value.trim() === "") {
@@ -255,24 +277,22 @@
           document
             .querySelector("input[name=first_name]")
             .style.setProperty("--show", 0);
-          span__first_name.style.display = 'block'
+          span__first_name.style.display = "block";
         }
         if (last_name.value.trim() === "") {
           last_name.style = error_style;
           document
             .querySelector("input[name=last_name]")
             .style.setProperty("--show", 0);
-                      span__last_name.style.display = 'block'
+          span__last_name.style.display = "block";
         }
         if (password.value.trim() === "") {
           password.style = error_style;
           document
             .querySelector("input[name=password]")
             .style.setProperty("--show", 0);
-                      span__password.style.display = 'block'
+          span__password.style.display = "block";
         }
-
-        console.log(password.value);
       });
     </script>
   </body>
