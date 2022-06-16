@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Index Page</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap");
+
+      :root {
+        --orange: hsl(31, 77%, 52%);
+        --dark__cyan: hsl(184, 100%, 22%);
+        --v__dark__cyan: hsl(179, 100%, 13%);
+        --font__size: 15px;
+        --trans__white: hsla(0, 0%, 100%, 0.75);
+        --light__gray: hsl(0, 0%, 95%);
+        --white: #fff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Lexend Deca", sans-serif;
+        height: 100vh;
+      }
+
+      .container {
+        width: 55%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .card {
+        padding: 2.8rem 2.6rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+      }
+
+      .sedan {
+        background-color: var(--orange);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .suv {
+        background-color: var(--dark__cyan);
+      }
+      .luxury {
+        background-color: var(--v__dark__cyan);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .card button {
+        padding: 1rem 1.9rem;
+        border-radius: 200px;
+        width: 150px;
+        box-sizing: border-box;
+        color: var(--orange);
+        background: var(--white);
+        border: 2px solid transparent;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      .sedan button {
+        color: var(--orange);
+      }
+      .suv button {
+        color: var(--dark__cyan);
+      }
+      .luxury button {
+        color: var(--v__dark__cyan);
+      }
+
+      .card button:hover {
+        color: var(--light__gray);
+        background: transparent;
+        border: 2px solid var(--light__gray);
+      }
+
+      .img {
+        padding: 2rem 0;
+        padding-top: 0;
+      }
+
+      .middle {
+        padding-bottom: 4rem;
+      }
+
+      .middle h2 {
+        margin-bottom: 1.3rem;
+        font-family: "Big Shoulders Display", cursive;
+        font-size: 2.1rem;
+        color: var(--light__gray);
+      }
+
+      .middle p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: var(--trans__white);
+      }
+
+      @media (max-width:700px) {
+        .container {
+            width: 70%;
+        }
+
+        .card {
+            padding: .9rem .45rem;
+            width: 100px;
+        }
+
+        .middle h2 {
+            font-size: 1rem;
+        }
+
+        .middle p {
+            font-size: .45rem;
+        }
+
+        .card button {
+            max-width: 90%;
+            padding: .5rem 0rem;
+            margin-bottom: .5rem;
+        }
+
+        .img {
+            width:60%;
+        }
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card sedan">
+        <div class="img">
+          <img src="./images/icon-sedans.svg" alt="" />
+        </div>
+        <div class="middle">
+          <h2>SEDANS</h2>
+          <p>
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+        </div>
+        <button>Learn More</button>
+      </div>
+
+      <div class="card suv">
+        <div class="img">
+          <img src="./images/icon-suvs.svg" alt="" />
+        </div>
+        <div class="middle">
+          <h2>SUVS</h2>
+          <p>
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off road adventures.
+          </p>
+        </div>
+        <button>Learn More</button>
+      </div>
+      <div class="card luxury">
+        <div class="img">
+          <img src="./images/icon-luxury.svg" alt="" />
+        </div>
+        <div class="middle">
+          <h2>LUXURY</h2>
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enchanced comfort of a luxury rental and arrive in style.
+          </p>
+        </div>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
