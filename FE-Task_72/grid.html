@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Grid</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1c28;
+        }
+
+      .container {
+        display: grid;
+        width: 50%;
+        height: 500px;
+        grid-template-areas: 
+        "red red red red yellow yellow"
+        "red red red red yellow yellow"
+        "green green green blue blue blue"
+        "green green green blue2 blue2 blue2"
+        ;
+        gap: 14px;
+      }
+
+      .container > div {
+        padding: 3rem;
+        /* padding: 50px; */
+      }
+
+      .red {
+        grid-area: red;
+        background: #eb5020;
+      }
+      .yellow {
+        grid-area: yellow;
+        background: #ffa401;
+      }
+      .green {
+        grid-area: green;
+        background: #05aa42;
+      }
+      .blue {
+        grid-area: blue;
+        background: #01aefd;
+      }
+      .blue2 {
+        grid-area: blue2;
+        background: #01aefd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="blue2"></div>
+    </div>
+  </body>
+</html>
