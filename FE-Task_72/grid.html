@@ -18,7 +18,7 @@
 
       .container {
         display: grid;
-        width: 50%;
+        width: 700px;
         height: 500px;
         grid-template-areas: 
         "red red red red yellow yellow"
@@ -53,6 +53,14 @@
       .blue2 {
         grid-area: blue2;
         background: #01aefd;
+      }
+
+      @media (max-width:540px) {
+        .container {
+            height: 300px;
+            width: 300px;
+            gap: 5px;
+        }
       }
     </style>
   </head>
