@@ -32,8 +32,8 @@
 
 > space-invader -> https://odebisiidowusolomon.github.io/space-invader
 
-> FE-Task_74 -> https://odebisiidowusolomon.github.io/FE-Task_74/
+> FE-Task_72 -> https://odebisiidowusolomon.github.io/FE-Task_72/
 
-> FE-Task_74 -> https://odebisiidowusolomon.github.io/FE-Task_74/grid.html
+> FE-Task_72 -> https://odebisiidowusolomon.github.io/FE-Task_72/grid.html
 
-> FE-Task_72-flex -> https://odebisiidowusolomon.github.io/FE-Task_72/index.html
+> FE-Task_74-flex -> https://odebisiidowusolomon.github.io/FE-Task_74/index.html
