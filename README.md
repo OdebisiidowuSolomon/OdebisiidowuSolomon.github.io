@@ -37,3 +37,7 @@
 > FE-Task_72 -> https://odebisiidowusolomon.github.io/FE-Task_72/grid.html
 
 > FE-Task_74-flex -> https://odebisiidowusolomon.github.io/FE-Task_74/index.html
+
+> Zuri-FE-basic-calculator -> https://odebisiidowusolomon.github.io/Zuri-FE-basic-calculator/index.html
+
+> Zuri-FE-JS-87-print -> https://odebisiidowusolomon.github.io/Zuri-FE-JS-87-print/index.html
