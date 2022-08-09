@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* overflow-x: hidden; */
+}
+
+
+.red {
+    color: #e7332b;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    min-height: 64px;
+    /* padding: 0 1.5rem 1rem 1.5rem; */
+}
+
+.header {
+    width: 84%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header_right ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header_right ul li {
+    padding-bottom: .9rem;
+    padding: 0 .3rem 1rem .3rem;
+    margin-top: .9rem;
+    margin-left: 3.25rem;
+    font-size: 1.15rem;
+}
+
+.header_right ul li:first-child {
+    border-bottom: 3px solid #e7332b;
+}
+
+.header_right button {
+    padding: 11px 35px;
+    margin-left: 3rem;
+    border: none;
+    border-bottom-right-radius: 10px;
+    background: #e7332b;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.sect1 {
+    width: 85%;
+    margin: auto;
+    padding-top: 14rem;
+}
+
+.sect1_flex {
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.sect1_left {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.sect1_right {
+    max-width: 50%;
+    position: relative;
+}
+
+.sect1_right_img {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.sect1_right img {
+    width: 70%;
+}
+
+.sect1_right_line {
+    position: absolute;
+    margin-top: -157px;
+    margin-right: -86px;
+    right: 0;
+    z-index: -1;
+}
+
+.sect1_right_line img {
+    width: 138px;
+}
+
+.sect1_cont1 p:first-child{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.sect1_img_line {
+    margin-left: 400px;
+    margin-top: -25px;
+}
+
+.sect1_img_line img{
+    width: 100px;
+}
+
+.sect1_cont1 p:nth-child(3){
+    line-height: 22px;
+    color: #787878;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    width: 70%;
+}
+
+.sect1_btn_flex {
+    padding-top: 2rem;
+}
+
+.sect1_btn_flex button {
+    padding: .7rem 3.3rem;
+    border: none;
+    margin-right: 1rem;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+    color: white;
+}
+
+.sect2 {
+    background-image: url('./img/bgsection.png');
+    margin-top: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 9rem;
+}
