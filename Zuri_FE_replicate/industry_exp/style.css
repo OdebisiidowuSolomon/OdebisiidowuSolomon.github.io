@@ -4,7 +4,8 @@
     margin: 0;
 }
 
-body{
+body {
+    letter-spacing: 0.00938em;
     /* overflow-x: hidden; */
 }
 
@@ -115,7 +116,7 @@ a {
     width: 138px;
 }
 
-.sect1_cont1 p:first-child{
+.sect1_cont1 p:first-child {
     font-size: 2.7rem;
     font-weight: 700;
 }
@@ -125,11 +126,11 @@ a {
     margin-top: -25px;
 }
 
-.sect1_img_line img{
+.sect1_img_line img {
     width: 100px;
 }
 
-.sect1_cont1 p:nth-child(3){
+.sect1_cont1 p:nth-child(3) {
     line-height: 22px;
     color: #787878;
     font-size: 1.2rem;
@@ -152,7 +153,127 @@ a {
 
 .sect2 {
     background-image: url('./img/bgsection.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 6rem;
     padding-top: 5rem;
     padding-bottom: 9rem;
+}
+
+.sect2_sect1 {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+}
+
+.sect2_sect1_left {
+    width: 50%;
+}
+
+.sect2_sect1_left p:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.sect2_sect1_left p:first-child+p {
+    padding-top: 10px;
+    color: #161617;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.sect2_sect1_left p:first-child+p+p {
+    color: #787878;
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.sect2_sect1_countries {
+    display: flex;
+    padding-top: 1.2rem;
+}
+
+.sect2_sect1_country {
+    background-color: #fff;
+    padding: .6rem;
+    border-radius: 10px;
+    margin-right: .6rem;
+    width: 4rem;
+    display: flex;
+}
+.sect2_sect1_country img {
+    width: 75%;
+    margin: auto;
+}
+
+.sect2_sect1_right {
+    width: 50%;
+}
+
+
+.sect2_sect1_img {
+    display: flex;
+    justify-content: end;
+}
+
+.sect2_sect1_img img {
+    width: 70%;
+}
+
+.sect3 {
+    padding: 6.25rem 0;
+    width: 85%;
+    margin: auto;
+}
+
+.sect3_sect1 {
+    display: flex;
+    width: 40%;
+    justify-content: start;
+}
+
+.sect3_sect1 p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1.8rem;
+}
+
+.sect3_skills, .sect3_talents {
+    display: flex;
+}
+
+.sect3_skill,.sect3_talent {
+    display: flex;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.sect3_skill p, .sect3_talent p {
+    padding: 1rem 2.9rem;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16)!important;
+    color: #787878;
+    font-size: 1.25rem;
+    margin-bottom: 1.9rem;
+}
+
+.sect3_talent_work p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1.8rem 0;
+}
+
+.sect3_sect2 {
+    position: relative;
+}
+
+.sect3_sect2_img {
+    position: absolute;
+    right: -46px;
+    margin-top: -137px;
+}
+
+.sect3_sect2_img img{
+    width: 340px;
 }
