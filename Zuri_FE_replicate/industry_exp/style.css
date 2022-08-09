@@ -121,6 +121,10 @@ a {
     width: 138px;
 }
 
+.sect1_cont1 {
+    width: 100%;
+}
+
 .sect1_cont1 p:first-child {
     font-size: 2.7rem;
     font-weight: 700;
@@ -538,8 +542,14 @@ footer {
 
 @media (max-width:600px) {
 
+    .sect1_img_line {
+        margin-left: auto;
+    }
+
     .sect1_btn_flex {
         flex-direction: column;
+        width: 60%;
+        margin: auto;
     }
 
     .sect1_btn_flex button {
