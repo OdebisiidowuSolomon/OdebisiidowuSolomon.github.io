@@ -5,7 +5,7 @@ const sections = document.getElementsByClassName('sect7_section')
 function handleClick(e) {
     const secondDiv = e.path[2].querySelectorAll('div')[1];
     const {height} = secondDiv.style
-    secondDiv.style.height = height == '0px' || !height ? '20px' : '0px'
+    secondDiv.style.height = height == '0px' || !height ? '38px' : '0px'
 }
 
 for (let element of sections) {

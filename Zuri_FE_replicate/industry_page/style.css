@@ -14,6 +14,7 @@ body {
 }
 
 .sect1_left img,
+.sect1_right img,
 .sect2_flex img,
 .sect3_flex .right img {
     mix-blend-mode: darken;
@@ -27,6 +28,7 @@ a {
 header {
     display: flex;
     padding: 15px 0px;
+    padding-top: 30px;
     align-items: center;
     width: 90%;
     margin: auto;
@@ -274,6 +276,7 @@ header ul li:last-child {
     padding: 58px 48px 93px 50px !important;
     position: relative;
     transition: all .4s;
+    flex-grow: 1;
 }
 
 .curve_card1 {
@@ -459,7 +462,7 @@ header ul li:last-child {
     flex-grow: 1;
     max-width: 33.3%;
     padding: 2.4rem;
-    background:#fff;
+    background: #fff;
     margin-top: 1.5rem;
     margin-left: 1.5rem;
     border-radius: 40px;
@@ -939,23 +942,23 @@ header ul li:last-child {
         font-size: 30px
     }
 
-    
-.sect8_flex_cont {
-    width: 95%;
-}
+
+    .sect8_flex_cont {
+        width: 95%;
+    }
 
 
-.sect9_main h2 { 
-    font-size: 40px;
-}
+    .sect9_main h2 {
+        font-size: 40px;
+    }
 
-header ul li {
-    display: none;
-}
+    header ul li {
+        display: none;
+    }
 
-ul li:last-child {
-    display: block;
-}
+    ul li:last-child {
+        display: block;
+    }
 
 }
 
@@ -996,7 +999,81 @@ ul li:last-child {
         flex-direction: column;
     }
 
-    .sect8_left, .sect8_right {
+    .sect8_left,
+    .sect8_right {
         width: 100%;
     }
+
+}
+
+@media (max-width:520px) {
+
+    header .header_img img {
+        width: 65%;
+    }
+
+    .enroll {
+        padding: 7px 35px;
+    }
+
+
+    .sect1_middle h2 {
+        font-size: 29px;
+    }
+
+
+    .sect1 .sect1_left img {
+        width: 120%;
+    }
+
+
+    .maleface {
+        display: none;
+    }
+
+
+    .sect1_middle .sect1_wire_cont {
+        width: 85%;
+    }
+
+    .sect1_middle .sect1_wire_cont img {
+        width: 20%;
+    }
+
+
+    .sect2_flex h2,
+    .sect2_flex p {
+        text-align: center;
+    }
+
+
+    .sect3_wire_cont+div>h2 {
+        font-size: 23px;
+    }
+
+
+    .sect4_card {
+        height: auto;
+        padding: 58px 38px 83px 30px !important;
+    }
+
+    .sect7_more {
+        flex-direction: column;
+    }
+
+    .sect10_sect1 {
+        flex-direction: column;
+    }
+
+
+    .sect10_sect1_left img:first-child {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    
+.sect4_card img+p+p { 
+    font-size: 1.4rem;
+}
+
 }
