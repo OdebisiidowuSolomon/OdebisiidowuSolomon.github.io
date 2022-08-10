@@ -9,6 +9,10 @@
     /* color: #1b1a20; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(255, 253, 245);
 }
@@ -34,13 +38,12 @@ header {
     right: 0;
     background: rgb(255, 253, 245);
     z-index: 10000;
-    padding: 15px 20px;
-    padding-top: 30px;
+    padding: 36px 40px;
+    padding-top: 25px;
     align-items: center;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
 }
 
 header .header_img img {
@@ -53,11 +56,13 @@ header ul {
     margin-left: auto;
     display: flex;
     align-items: center;
+    color: #585857;
 }
 
 header ul li {
     font-size: 18px;
     margin-right: 2rem;
+    align-self: center;
 }
 
 header ul li:nth-child(4) {
@@ -68,11 +73,12 @@ header ul li:last-child {
     margin-right: 0rem;
     display: flex;
     align-items: center;
+    margin-top: -0.5rem;
     /* background-color: red; */
 }
 
 .thumbs {
-    width: 55px;
+    width: 75px;
     background-color: #e7332b;
     border-radius: 50%;
     padding: 10px;
@@ -84,10 +90,11 @@ header ul li:last-child {
 .enroll {
     background-color: #e7332b;
     font-size: .7rem;
-    padding: 10px 32px;
+    padding: 13px 32px;
     border-radius: 30px;
     color: white;
-}
+    margin-top: 1rem;
+    margin-left: 1.3rem;}
 
 .sect1 {
     display: flex;
@@ -561,6 +568,7 @@ header ul li:last-child {
     align-items: center;
     padding-bottom: .5rem;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .sect7_section1 p {
@@ -569,6 +577,7 @@ header ul li:last-child {
 
 .sect7_section1 span {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .sect7_section2 {
@@ -576,6 +585,10 @@ header ul li:last-child {
     height: 0px;
     overflow: hidden;
     transition: all .4s;
+}
+
+.sect7_section2 p {
+    font-size: 14px;
 }
 
 .sect7_more {
