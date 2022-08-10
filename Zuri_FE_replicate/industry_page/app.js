@@ -46,6 +46,10 @@ function handleShow(title, body) {
         <p>${body}</p>
     </div>
     `
+
+    // card.style.left = (document.body.clientWidth - card.style.width) / 2
+
+
     overlay.appendChild(card)
     overlay.addEventListener('click', removeOverlay.bind(overlay))
     document.body.appendChild(overlay,)

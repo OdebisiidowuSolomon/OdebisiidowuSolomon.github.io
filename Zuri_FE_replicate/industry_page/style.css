@@ -14,7 +14,8 @@ html {
 }
 
 body {
-    background-color: rgb(255, 253, 245);position: relative;
+    background-color: rgb(255, 253, 245);
+    position: relative;
 }
 
 .sect1_left img,
@@ -94,7 +95,8 @@ header ul li:last-child {
     border-radius: 30px;
     color: white;
     margin-top: 1rem;
-    margin-left: 1.3rem;}
+    margin-left: 1.3rem;
+}
 
 .sect1 {
     display: flex;
@@ -732,10 +734,10 @@ header ul li:last-child {
 }
 
 .sect8_left ul li span,
-.sect8_right ul li span{
+.sect8_right ul li span {
     background-color: #e7332b;
     color: #fff;
-    width: 16px;   
+    width: 16px;
     height: 16px;
     font-size: .7rem;
     border-radius: 50%;
@@ -743,7 +745,7 @@ header ul li:last-child {
     display: flex;
     font-family: monospace !important;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
 .sect8_left ul span,
@@ -1046,6 +1048,10 @@ header ul li:last-child {
         width: 100%;
     }
 
+    .overlay .card {
+        left: 12vw !important;
+    }
+
 }
 
 @media (max-width:520px) {
@@ -1054,8 +1060,17 @@ header ul li:last-child {
         width: 65%;
     }
 
+
+    .thumbs {
+        width: 50px;
+        margin-top: -16px;
+    }
+
     .enroll {
-        padding: 7px 35px;
+        padding: 4px 22px;
+        margin-top: 1rem;
+        margin-left: .3rem;
+        width: 6.4rem;
     }
 
 
@@ -1241,6 +1256,11 @@ header ul li:last-child {
         margin-top: .9rem;
     }
 
+    .overlay .card {
+        max-width: 80% !important;
+        left: 10% !important;
+    }
+
 }
 
 .overlay {
@@ -1249,7 +1269,7 @@ header ul li:last-child {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     height: 100%;
     width: 100%;
     z-index: 2000;
@@ -1258,15 +1278,14 @@ header ul li:last-child {
 .overlay .card {
     position: fixed;
     top: 30%;
-    width: 80%;
-    max-width: 500px;
-    left: 6%;
-    left: 25vw;
     background-color: #fff;
     padding: 1.2rem;
     padding-top: .7rem;
     border-radius: 10px;
     z-index: 3000;
+    max-width: 30rem;
+    left: 29vw;
+
 }
 
 .card_sect1 {
