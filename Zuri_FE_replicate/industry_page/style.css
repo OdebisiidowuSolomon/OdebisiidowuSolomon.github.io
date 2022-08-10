@@ -27,10 +27,16 @@ a {
 
 header {
     display: flex;
-    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgb(255, 253, 245);
+    z-index: 10000;
+    padding: 15px 20px;
     padding-top: 30px;
     align-items: center;
-    width: 90%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -844,6 +850,11 @@ header ul li:last-child {
 }
 
 
+.sect10_sect2 hr {
+    display: none;
+}
+
+
 @media (max-width:1110px) {
     .sect1 {
         flex-direction: column;
@@ -1023,7 +1034,7 @@ header ul li:last-child {
 
 
     .sect1 .sect1_left img {
-        width: 120%;
+        width: 110%;
     }
 
 
@@ -1044,11 +1055,13 @@ header ul li:last-child {
     .sect2_flex h2,
     .sect2_flex p {
         text-align: center;
+        font-size: 19px !important;
     }
 
 
     .sect3_wire_cont+div>h2 {
-        font-size: 23px;
+        font-size: 19px;
+        line-height: 1.45rem;
     }
 
 
@@ -1057,12 +1070,18 @@ header ul li:last-child {
         padding: 58px 38px 83px 30px !important;
     }
 
+    .sect5_btn {
+        /* padding: .6rem; */
+        font-size: .7rem;
+    }
+
     .sect7_more {
         flex-direction: column;
     }
 
     .sect10_sect1 {
         flex-direction: column;
+        text-align: center;
     }
 
 
@@ -1071,9 +1090,124 @@ header ul li:last-child {
         margin-bottom: 1rem;
     }
 
-    
-.sect4_card img+p+p { 
-    font-size: 1.4rem;
-}
+
+    .sect4_card img+p+p {
+        font-size: 1.4rem;
+    }
+
+
+    .sect7_wire_cont+div {
+        margin-top: -5px
+    }
+
+    .sect8_sect7img_cont img {
+        width: 21%;
+    }
+
+
+    .sect8_star1img_cont {
+        margin-top: 0rem;
+    }
+
+
+    .sect1_middle .sect_line_cont {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 14px 0;
+    }
+
+
+
+    .sect5_perks_flex_cont .perk_cont {
+        padding: .4rem;
+        margin-right: .4rem;
+    }
+
+    .sect5_perks_flex_cont .perk_cont img {
+        width: 13%;
+    }
+
+
+    .sect5_perks_flex_cont .perk_cont span {
+        font-size: .5rem;
+    }
+
+
+
+    .sect6_cont1 {
+        width: auto;
+    }
+
+    .sect6_img_cont img {
+        width: 20%;
+    }
+
+
+    .sect6_cont1 h2 {
+        font-size: 22px;
+        line-height: 1.8rem;
+    }
+
+
+    .sect6_langs+p {
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+
+
+    .sect6_langs img {
+        width: 2.8rem;
+        padding-bottom: .9rem;
+    }
+
+    .sect7_section2 p {
+        font-size: .88rem;
+        line-height: 1.3rem;
+    }
+
+
+    .sect9_main h2 {
+        font-size: 1.6rem;
+    }
+
+
+    .sect9_main_flex {
+        justify-content: space-between;
+    }
+
+
+    .sect9_main_flex_right {
+        justify-content: flex-end;
+    }
+
+    .sect10_sect1_left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sect10_sect2 {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .sect10_sect2_right {
+        flex-direction: column-reverse;
+        /* margin-bottom: .7rem; */
+        align-items: center;
+    }
+
+    .sect10_sect2_right div {
+        margin-bottom: 1rem;
+    }
+
+
+    .sect10_sect2 hr {
+        display: block;
+    }
+
+    .sect10_sect2 p {
+        margin-top: .9rem;
+    }
 
 }
