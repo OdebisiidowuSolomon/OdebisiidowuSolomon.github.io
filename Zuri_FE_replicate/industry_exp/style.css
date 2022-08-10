@@ -10,7 +10,7 @@ html {
 
 body {
     letter-spacing: 0.00938em;
-    font-family:'Graphik';
+    font-family: 'Graphik';
 }
 
 
@@ -127,12 +127,12 @@ a {
 
 .sect1_cont1 p:first-child {
     font-size: 2.7rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .sect1_img_line {
-    margin-left: 400px;
-    margin-top: -25px;
+    margin-left: 456px;
+    margin-top: -27px;
 }
 
 .sect1_img_line img {
@@ -334,7 +334,8 @@ a {
 .sect4_cont_card:hover {
     background-color: #161617;
 }
-.sect4_cont_card:hover p{
+
+.sect4_cont_card:hover p {
     color: #fff !important;
 }
 
@@ -466,7 +467,7 @@ footer {
     html {
         overflow-x: auto;
     }
-    
+
     .sect1_right_line {
         display: none;
     }
@@ -563,7 +564,8 @@ footer {
     .sect4_cont_img {
         bottom: -150px;
     }
-    .sect4_cont_img img{
+
+    .sect4_cont_img img {
         width: auto;
         max-width: 100%;
     }

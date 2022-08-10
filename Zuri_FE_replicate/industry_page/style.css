@@ -9,6 +9,16 @@
     /* color: #1b1a20; */
 }
 
+body {
+    background-color: rgb(255, 253, 245);
+}
+
+.sect1_left img,
+.sect2_flex img,
+.sect3_flex .right img {
+    mix-blend-mode: darken;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -260,10 +270,20 @@ header ul li:last-child {
     margin-left: 1.3rem;
     border-radius: 25px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
-    background-color: #e7332b;
+    background-color: #fff;
     padding: 58px 48px 93px 50px !important;
     position: relative;
     transition: all .4s;
+}
+
+.curve_card1 {
+    background-color: #e7332b;
+    color: #fff !important;
+}
+
+.curve_card1 p {
+    color: #fff !important;
+    font-weight: 700;
 }
 
 .sect4_card:hover {
@@ -304,7 +324,7 @@ header ul li:last-child {
 
 .sect5 {
     margin-top: 8rem;
-    background: pink;
+    background: #e7332b;
 }
 
 .sect5_flex_cont {
@@ -318,12 +338,17 @@ header ul li:last-child {
     width: 40%;
     padding-left: 1.4rem;
     padding-top: 1.4rem;
-    background-color: gray;
+    color: #fff;
+    background: #e7332b;
+}
+
+.sect5_left p:nth-child(4) {
+    width: auto !important;
 }
 
 .sect5_right {
     width: 60%;
-    background-color: green;
+    background: #e7332b;
 }
 
 .sect5_right div,
@@ -346,6 +371,8 @@ header ul li:last-child {
     padding: 10px 32px;
     border-radius: 1000px;
     margin: 1.6rem 0px;
+    background: #fff;
+    color: #e7332b;
     box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
 }
 
@@ -358,11 +385,13 @@ header ul li:last-child {
     width: 45%;
     display: flex;
     align-items: center;
-    background: purple;
+    background: #e7332b;
     margin-top: 1.2rem;
     margin-left: 1.2rem;
     padding: .6rem;
     border-radius: 3rem;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
 .sect5_perks_flex_cont .perk_cont:nth-child(1),
@@ -430,22 +459,23 @@ header ul li:last-child {
     flex-grow: 1;
     max-width: 33.3%;
     padding: 2.4rem;
-    background: yellow;
+    background:#fff;
     margin-top: 1.5rem;
     margin-left: 1.5rem;
     border-radius: 40px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    color: #1b1a20;
 }
 
 .sect6_card_cont h3 {
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 1.25rem;
-    color: #1b1a20;
 }
 
 .sect6_langs {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sect6_langs img {
@@ -470,6 +500,8 @@ header ul li:last-child {
     padding: 12px 32px;
     border-radius: 1000px;
     font-size: 1.2rem;
+    color: #fff;
+    background: #e7332b;
 }
 
 .sect7 {
@@ -553,6 +585,8 @@ header ul li:last-child {
 .sect7_more button {
     border-radius: 80px;
     border: none;
+    color: #fff;
+    background-color: #e7332b;
 }
 
 .sect7_more a {
@@ -565,6 +599,7 @@ header ul li:last-child {
     /* width: 1rem; */
     width: 30px;
     height: 30px;
+    fill: #fff;
 }
 
 .sect8 {
@@ -696,7 +731,7 @@ header ul li:last-child {
     /* height: 500px; */
 }
 
-.sect9_circle_cont img{
+.sect9_circle_cont img {
     display: flex;
     margin-bottom: 1.4rem;
     width: 10%;
@@ -713,6 +748,7 @@ header ul li:last-child {
     left: 14%;
     margin-top: 3rem;
 }
+
 .sect9_sect1 .bend {
     position: absolute;
     right: 5%;
@@ -721,7 +757,9 @@ header ul li:last-child {
 
 .sect9_main {
     text-align: center;
+    color: #fff;
 }
+
 .sect9_main p {
     font-size: 1rem;
     padding-top: 4.5rem;
@@ -740,6 +778,8 @@ header ul li:last-child {
     border-radius: 79px;
     padding: 12px 35px;
     border: none;
+    background-color: #fff;
+    color: #e7332b;
 }
 
 .sect9_main_flex {
@@ -749,16 +789,18 @@ header ul li:last-child {
 .sect9_main_flex_left {
     display: flex;
 }
+
 .sect9_main_flex_left img {
-    width: 120%;
+    width: 100%;
 }
 
-.sect9_main_flex_right{
+.sect9_main_flex_right {
     width: 120%;
-    display: flex;justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
-.sect9_main_flex_right img{
+.sect9_main_flex_right img {
     width: 13%;
 }
 
@@ -782,7 +824,7 @@ header ul li:last-child {
     margin: 1.5rem 0;
 }
 
-.sect10_sect2 p{
+.sect10_sect2 p {
     font-size: 16px !important;
     color: #1b1a20;
 }
@@ -796,4 +838,165 @@ header ul li:last-child {
 .sect10_sect2_right div {
     margin-right: .9rem;
     font-size: 16px;
+}
+
+
+@media (max-width:1110px) {
+    .sect1 {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding-top: 70px;
+    }
+
+    .sect1 .sect1_left {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .sect1 .sect1_left img {
+        width: 75%;
+    }
+
+    .sect1_middle {
+        width: 90%;
+        max-width: 97%;
+        margin-top: -2rem;
+    }
+
+    .sect1_middle p {
+        width: 85%;
+        margin: auto;
+    }
+
+    .sect1_right {
+        display: none;
+    }
+
+    .sect2_flex h2,
+    .sect2_flex p {
+        font-size: 23px !important;
+    }
+
+
+    .sect3_wire_cont+div>h2 {
+        font-size: 30px;
+        line-height: 2rem;
+    }
+
+
+    .sect3_flex .right {
+        margin-top: 3rem;
+    }
+
+    .sect2_flex {}
+
+    .sect4_card {
+        max-width: 45%;
+        margin: .7rem !important;
+    }
+
+    .sect5_flex_cont {
+        flex-direction: column;
+    }
+
+    .sect5_left,
+    .sect5_right {
+        width: 100%;
+    }
+
+    .sect5_perks_flex_cont .perk_cont {
+        width: auto;
+        margin: 0;
+        margin-right: .7rem;
+        margin-bottom: .7rem;
+    }
+
+    .sect5_perks_flex_cont {
+        margin-bottom: 1rem;
+    }
+
+    .sect6_cont1 h2 {
+        font-size: 30px;
+        margin-bottom: .8rem;
+    }
+
+    .sect6_card_cont {
+        min-width: 45%;
+    }
+
+    .sect6_langs img {
+        width: 3.4rem;
+    }
+
+
+    .sect7_wire_cont+div {
+        margin-top: -57px;
+    }
+
+    .sect7_wire_cont+div h2 {
+        font-size: 30px
+    }
+
+    
+.sect8_flex_cont {
+    width: 95%;
+}
+
+
+.sect9_main h2 { 
+    font-size: 40px;
+}
+
+header ul li {
+    display: none;
+}
+
+ul li:last-child {
+    display: block;
+}
+
+}
+
+@media (max-width:900px) {
+    .sect2_flex {
+        flex-direction: column;
+    }
+
+    .sect2_flex div {
+        width: auto;
+    }
+
+    .sect3_flex {
+        flex-direction: column;
+    }
+
+    .sect3_flex .left {
+        max-width: 100%;
+    }
+
+    .sect4_flex {
+        display: block;
+        width: 90%;
+    }
+
+    .sect4_card {
+        max-width: 95%;
+        margin: auto;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .sect6_card_cont {
+        margin-left: 0;
+        min-width: 100%;
+    }
+
+    .sect8_flex_cont {
+        flex-direction: column;
+    }
+
+    .sect8_left, .sect8_right {
+        width: 100%;
+    }
 }
