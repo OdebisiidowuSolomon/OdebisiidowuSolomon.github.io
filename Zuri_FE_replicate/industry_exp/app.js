@@ -41,7 +41,7 @@ const hireDiv = `
         <button>Book a Consultation</button>
         <div class="card_flex">
             <a href="../industry_page">Industry Page</a>
-            <a href="../landing_page">Lannding Page</a>
+            <a href="../landing_page">Landing Page</a>
         </div>
     </div>
 `

@@ -25,6 +25,10 @@ body {
     position: relative;
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
 }

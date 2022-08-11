@@ -15,6 +15,9 @@ body {
     height: 99.9%;
 }
 
+button {
+    cursor: pointer;
+}
 
 .red {
     color: #e7332b;
