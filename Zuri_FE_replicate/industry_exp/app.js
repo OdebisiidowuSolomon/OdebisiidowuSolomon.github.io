@@ -104,7 +104,6 @@ for (let poolBtn of talentPoolBtn) {
 
 window.addEventListener("scroll", function (e) {
 
-    // console.log(this.window.scrollY);
 
 
 
@@ -116,10 +115,6 @@ window.addEventListener("scroll", function (e) {
         handleActiveLinks(_whyus, _home, _impact)
     }
 
-    console.log();
-
-    // console.log(document.documentElement.scrollTop)
-    // || document.body.scrollTop
 }, false);
 
 

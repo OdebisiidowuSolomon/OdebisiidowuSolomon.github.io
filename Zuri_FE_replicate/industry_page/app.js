@@ -9,7 +9,6 @@ function handleClick(e) {
     }
     const secondDiv = e.path[index].querySelectorAll('div')[1];
     const p = secondDiv.querySelector('p')
-    console.log(p.clientHeight);
     const { height } = secondDiv.style
     secondDiv.style.height = height == '0px' || !height ? `${p.clientHeight}px` : '0px'
 }
@@ -52,7 +51,6 @@ function handleShow(title, body, bool = false) {
     overlay.classList.add('overlay')
     card.classList.add('card')
 
-    console.log(title,body,bool);
 
     if (!bool) {
         card.innerHTML = `
