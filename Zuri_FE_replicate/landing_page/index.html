@@ -25,8 +25,10 @@
         </div>
 
         <div class="button_container">
-            <button class="btn btn1"><a style="color: inherit;" href="../industry_page/index.html">I'm new to the Industry</a></button>
-            <button class="btn btn2"> <a style="color: inherit;" href="../industry_exp/index.html"> I need industry experience </a></button>
+            <button class="btn btn1"><a style="color: inherit;" href="../industry_page/index.html">I'm new to the
+                    Industry</a></button>
+            <button class="btn btn2"> <a style="color: inherit;" href="../industry_exp/index.html"> I need industry
+                    experience </a></button>
         </div>
     </section>
     <section class="second">
@@ -41,8 +43,10 @@
         <div class="second_flex_cards">
             <div class="card_container">
                 <div class="card zed_training">
-                    <div class="_abs_img_left"><img class="abs_img_left" src="./img/left_bvmv7q.png" alt="zed_training"></div>
-                    <div class="_card_img"><img class="card_img" src="./img/zuri-training-img.svg" alt="zed_training"></div>
+                    <div class="_abs_img_left"><img class="abs_img_left" src="./img/left_bvmv7q.png" alt="zed_training">
+                    </div>
+                    <div class="_card_img"><img class="card_img" src="./img/zuri-training-img.svg" alt="zed_training">
+                    </div>
                     <p>
                         We understand a complete beginner cannot become a professional after a few weeks, the aim here
                         is to
@@ -53,19 +57,22 @@
                 </div>
             </div>
             <div class="">
-            <div class="card zed_internship">
-                <div class="_card_img"><img class="card_img" src="./img/zuri-internship-img.svg" alt="zed_internship"></div>
-                <p>
+                <div class="card zed_internship">
+                    <div class="_card_img"><img class="card_img" src="./img/zuri-internship-img.svg"
+                            alt="zed_internship"></div>
+                    <p>
 
-                    We place you in a work simulation. We give you tasks every week, the tasks ranges from easy to hard
-                    as you progress from stage to stage, making it to the final stage means you are ready for actual
-                    work.</p>
-                <a href="https://internship.zuri.team/" class="link red">I want to join the internship ></a>
-            </div>
+                        We place you in a work simulation. We give you tasks every week, the tasks ranges from easy to
+                        hard
+                        as you progress from stage to stage, making it to the final stage means you are ready for actual
+                        work.</p>
+                    <a href="https://internship.zuri.team/" class="link red">I want to join the internship ></a>
+                </div>
             </div>
             <div class="card_container">
                 <div class="card zed_talent">
-                    <div class="_abs_img"><img class="abs_img_right" src="./img/right_yz6hn3.png" alt="zed_training"></div>
+                    <div class="_abs_img"><img class="abs_img_right" src="./img/right_yz6hn3.png" alt="zed_training">
+                    </div>
                     <div class="_card_img"><img class="card_img" src="./img/zuri-talent-img.svg" alt="zed_talent"></div>
                     <p>
 
@@ -110,11 +117,56 @@
                 </div>
             </div>
         </div>
-                <div class="hr">
-                    <hr />
-                </div>
-                <p>&copy; 2022 ZURI TEAM</p>
+        <div class="hr">
+            <hr />
+        </div>
+        <p>&copy; 2022 ZURI TEAM</p>
     </footer>
+
+    <script>
+        function removeOverlay(e) {
+            if (e.path[0].className == 'overlay' || e.target.localName == 'img') {
+                this.style.display = 'none'
+                document.body.removeChild(this)
+            }
+        }
+
+
+        const infoDiv = `
+    <div class="card_sect1">
+        <h2>Here is the link to the other two pages</h2>
+        <div class="cancel"><img src="./img/close.svg" /></div>
+    </div>
+    <div class="card_body">
+        <p>Current Page:<span style="color:red; font-size:inherit"> Landing Page</span> </p>
+        <br />
+        <div class="card_flex info">
+            <a href="../industry_page">Industry Page</a>
+            <a href="../industry_exp">Industry Experience</a>
+        </div>
+    </div>
+`
+
+        function handleShow() {
+            const overlay = document.createElement('div');
+            const card = document.createElement('div');
+            overlay.classList.add('overlay')
+            card.classList.add('_card')
+
+
+                card.innerHTML = infoDiv
+            overlay.appendChild(card)
+            overlay.addEventListener('click', removeOverlay.bind(overlay))
+            document.body.appendChild(overlay)
+
+
+        }
+
+
+        handleShow()
+
+    </script>
+
 </body>
 
 </html>

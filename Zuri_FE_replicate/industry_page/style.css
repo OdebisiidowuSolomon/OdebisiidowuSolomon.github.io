@@ -1300,13 +1300,10 @@ header ul li:last-child {
     color: #585857;
 }
 
-.card_sect1 h2 {
-    font-size: 1.2rem;
-    color: #585857;
-}
 
 .card_sect1 .cancel {
     font-size: 50px;
+    cursor: pointer;
 }
 
 .card_body p{
@@ -1319,6 +1316,11 @@ header ul li:last-child {
     color: #585857;
 }
 
+.card_flex.info {
+    margin-top: 0;
+}
+
 .card_flex a {
     font-size: .7rem;
+    text-decoration: underline;
 }

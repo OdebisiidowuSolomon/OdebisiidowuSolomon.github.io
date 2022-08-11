@@ -14,7 +14,7 @@ const _home = document.querySelector('#_home')
 const _impact = document.querySelector('#_impact')
 const _whyus = document.querySelector('#_whyus')
 
-function handleActiveLinks(f,s,t) {
+function handleActiveLinks(f, s, t) {
     f.classList.add('active')
     s.classList.remove('active')
     t.classList.remove('active')
@@ -47,26 +47,44 @@ const hireDiv = `
 `
 
 function removeOverlay(e) {
-    console.log(e.target);
-    console.log(e);
-    if (e.path[0].className == 'overlay') {
+    if (e.path[0].className == 'overlay' || e.target.localName == 'img') {
         this.style.display = 'none'
         document.body.removeChild(this)
     }
 }
 
+const infoDiv = `
+<div class="card_sect1">
+    <h2>Here is the link to the other two pages</h2>
+    <div class="cancel"><img src="./img/close.svg" /></div>
+</div>
+<div class="card_body">
+    <p>Current Page:<span style="color:red; font-size:inherit"> Industry Experience</span> </p>
+    <br />
+    <div class="card_flex info">
+    <a href="../industry_page">Industry Page</a>
+    <a href="../landing_page">Landing Page</a>
+</div>
 
-function handleShow() {
-    console.log(this.id);
+</div>
+`
+
+function handleShow(bool = false) {
     const overlay = document.createElement('div');
     const card = document.createElement('div');
     overlay.classList.add('overlay')
     card.classList.add('card')
 
-    if (this.id == 'hire-talents') {
-        card.innerHTML = joinDiv
-    } else {
-        card.innerHTML = hireDiv
+
+    if(!bool) {
+
+        if (this.id == 'hire-talents') {
+            card.innerHTML = joinDiv
+        } else {
+            card.innerHTML = hireDiv
+        }
+    } else  {
+        card.innerHTML = infoDiv
     }
 
     overlay.appendChild(card)
@@ -90,12 +108,12 @@ window.addEventListener("scroll", function (e) {
 
 
 
-    if(this.window.scrollY > 0 && this.window.scrollY < sect1.clientHeight) {
-        handleActiveLinks(_home,_impact,_whyus)
-    } else if (this.window.scrollY > sect1.clientHeight && this.window.scrollY < impact.clientHeight + sect1.clientHeight+sect3.clientHeight) {
-        handleActiveLinks(_impact,_whyus, _home)
-    } else if (this.window.scrollY > impact.clientHeight +sect3.clientHeight && this.window.scrollY < whyUs.clientHeight+impact.clientHeight + sect1.clientHeight) {
-        handleActiveLinks(_whyus,_home,_impact)
+    if (this.window.scrollY > 0 && this.window.scrollY < sect1.clientHeight) {
+        handleActiveLinks(_home, _impact, _whyus)
+    } else if (this.window.scrollY > sect1.clientHeight && this.window.scrollY < impact.clientHeight + sect1.clientHeight + sect3.clientHeight) {
+        handleActiveLinks(_impact, _whyus, _home)
+    } else if (this.window.scrollY > impact.clientHeight + sect3.clientHeight && this.window.scrollY < whyUs.clientHeight + impact.clientHeight + sect1.clientHeight) {
+        handleActiveLinks(_whyus, _home, _impact)
     }
 
     console.log();
@@ -103,3 +121,6 @@ window.addEventListener("scroll", function (e) {
     // console.log(document.documentElement.scrollTop)
     // || document.body.scrollTop
 }, false);
+
+
+handleShow(true)

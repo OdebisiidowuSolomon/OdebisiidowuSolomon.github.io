@@ -22,18 +22,38 @@ for (let element of sections) {
 const sect8_li_spans = document.querySelectorAll('.sect8_left ul li span')
 
 function removeOverlay(e) {
-    if (e.path[0].className == 'overlay'||e.path[0].localName == 'img') {
+    if (e.path[0].className == 'overlay' || e.path[0].localName == 'img') {
         this.style.display = 'none'
         document.body.removeChild(this)
     }
 }
 
-function handleShow(title, body) {
+
+const infoDiv = `
+<div class="card_sect1">
+    <h2>Here is the link to the other two pages</h2>
+    <div class="cancel"><img src="./img/close.svg" /></div>
+</div>
+<div class="card_body">
+    <p>Current Page:<span style="color:red; font-size:inherit"> Industry Page</span> </p>
+    <br />
+    <div class="card_flex info">
+    <a href="../industry_exp">Industry Experience</a>
+    <a href="../landing_page">Landing Page</a>
+</div>
+
+</div>
+`
+
+function handleShow(title, body, bool = false) {
+
     const overlay = document.createElement('div');
     const card = document.createElement('div');
     overlay.classList.add('overlay')
     card.classList.add('card')
-    card.innerHTML = `
+
+    if (!bool) {
+        card.innerHTML = `
     <div class="card_sect1">
         <h2>${title}</h2>
         <div class="cancel"><img src="./img/close.svg" /></div>
@@ -44,12 +64,16 @@ function handleShow(title, body) {
         <br />
         <p>${body}</p>
         <div class="card_flex">
-        <a href="../industry_exp">Industry Page</a>
+        <a href="../industry_exp">Industry Experience</a>
         <a href="../landing_page">Landing Page</a>
     </div>
 
     </div>
     `
+    } else {
+        card.innerHTML = infoDiv
+    }
+
 
     overlay.appendChild(card)
     overlay.addEventListener('click', removeOverlay.bind(overlay))
@@ -59,3 +83,5 @@ function handleShow(title, body) {
 for (let span of sect8_li_spans) {
     span.addEventListener('click', handleShow.bind(null, span.dataset.title, span.dataset.body))
 }
+
+handleShow(null, null, true)
