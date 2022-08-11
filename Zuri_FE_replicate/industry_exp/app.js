@@ -76,14 +76,14 @@ function handleShow(bool = false) {
     card.classList.add('card')
 
 
-    if(!bool) {
+    if (!bool) {
 
         if (this.id == 'hire-talents') {
             card.innerHTML = joinDiv
         } else {
             card.innerHTML = hireDiv
         }
-    } else  {
+    } else {
         card.innerHTML = infoDiv
     }
 
@@ -95,11 +95,11 @@ function handleShow(bool = false) {
 }
 
 for (let talentBtn of joinTalentBtn) {
-    talentBtn.addEventListener('click', handleShow.bind(talentBtn))
+    talentBtn.addEventListener('click', handleShow.bind(talentBtn, false))
 }
 
 for (let poolBtn of talentPoolBtn) {
-    poolBtn.addEventListener('click', handleShow.bind(poolBtn))
+    poolBtn.addEventListener('click', handleShow.bind(poolBtn, false))
 }
 
 window.addEventListener("scroll", function (e) {

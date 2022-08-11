@@ -52,6 +52,8 @@ function handleShow(title, body, bool = false) {
     overlay.classList.add('overlay')
     card.classList.add('card')
 
+    console.log(title,body,bool);
+
     if (!bool) {
         card.innerHTML = `
     <div class="card_sect1">
@@ -81,7 +83,7 @@ function handleShow(title, body, bool = false) {
 }
 
 for (let span of sect8_li_spans) {
-    span.addEventListener('click', handleShow.bind(null, span.dataset.title, span.dataset.body))
+    span.addEventListener('click', handleShow.bind(null, span.dataset.title, span.dataset.body, false))
 }
 
 handleShow(null, null, true)

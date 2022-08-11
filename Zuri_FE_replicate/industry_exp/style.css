@@ -629,19 +629,25 @@ footer {
     padding-top: .7rem;
     border-radius: 10px;
     z-index: 3000;
-    max-width: 30rem;
-    left: 29vw;
-
+    /* max-width: 30rem; */
+    /* height: 15rem; */
+    width: 43rem;
+    left: 23vw;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card_sect1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: .9rem;
 }
 
 .card_sect1 h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem !important;
     color: #585857;
 }
 
@@ -668,4 +674,35 @@ footer {
 .card_flex a {
     font-size: .7rem;
     text-decoration: underline;
+}
+
+.card h2 {
+    font-size: 2.3rem;
+    line-height: 1.5rem;
+    color: #161617;
+    font-weight: 300;
+    margin: 1.3rem 0;
+}
+
+.card p {
+    font-size: 19px;
+}
+
+.card button {
+    background-color: #e7332b;
+    color: #fff;
+    padding: .8rem 3.5rem;
+    margin: .6rem 0;
+    border: none;
+    border-radius: 50px;
+}
+
+.hireDiv,.joinDiv p {
+    color: #787878;
+    width: 70%;
+    margin: auto;
+}
+
+.hireDiv,.joinDiv {
+    text-align: center;
 }
