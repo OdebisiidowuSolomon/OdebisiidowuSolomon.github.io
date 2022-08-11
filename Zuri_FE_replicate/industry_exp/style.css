@@ -418,6 +418,10 @@ footer {
         flex-direction: column;
     }
 
+    .sect1_btn_flex {
+        justify-content: center;
+    }
+
     html {
         overflow-x: hidden;
     }
