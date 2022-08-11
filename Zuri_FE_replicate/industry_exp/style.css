@@ -542,12 +542,6 @@ footer {
     .sect3_talent p {
         margin-bottom: -.3rem;
     }
-
-    .overlay .card {
-        width: 67vw !important;
-        left: 20vw !important;
-    }
-
 }
 
 @media (max-width:600px) {
@@ -600,12 +594,6 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .overlay .card {
-        max-width: 30rem !important;
-        left: 17vw !important;
-    }
-
-
 }
 
 
@@ -629,14 +617,8 @@ footer {
     padding-top: .7rem;
     border-radius: 10px;
     z-index: 3000;
-    /* max-width: 30rem; */
-    /* height: 15rem; */
-    width: 43rem;
-    left: 23vw;
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
+    left: 25%;
 }
 
 .card_sect1 {
@@ -705,4 +687,17 @@ footer {
 
 .hireDiv,.joinDiv {
     text-align: center;
+}
+
+@media (max-width: 400px) {
+    .overlay ._card {
+        width: 80%;
+        left: 10%;
+    }
+
+    .btn,
+    button {
+        width: auto;
+    }
+
 }

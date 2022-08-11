@@ -273,17 +273,6 @@ footer {
         width: auto;
     }
 
-    .card {
-        height: 520px;
-        height: auto;
-        width: auto;
-    }
-
-    .overlay ._card {
-        left: 12vw !important;
-    }
-
-
 }
 
 
@@ -311,20 +300,6 @@ footer {
 }
 
 
-@media (max-width:500px) {
-    .overlay ._card {
-        max-width: 80% !important;
-        left: 10% !important;
-    }
-
-}
-
-@media (max-width:352px) {
-    ._card {
-        height: auto;
-    }
-}
-
 
 .overlay {
     position: absolute;
@@ -346,9 +321,8 @@ footer {
     padding-top: .7rem;
     border-radius: 10px;
     z-index: 3000;
-    max-width: 30rem;
-    left: 29vw;
-
+    width: 50%;
+    left: 25%;
 }
 
 .card_sect1 {
@@ -386,4 +360,22 @@ footer {
     font-size: .7rem;
     text-decoration: underline;
     color: inherit;
+}
+
+@media (max-width: 400px) {
+    .overlay ._card {
+        width: 80%;
+        left: 10%;
+    }
+
+    .btn, button {
+        width: auto;
+    }
+
+    .card {
+        height: auto;
+        margin: .6rem;
+        padding: 2.6rem 1.3rem;
+    }
+
 }

@@ -1049,10 +1049,6 @@ header ul li:last-child {
         width: 100%;
     }
 
-    .overlay .card {
-        left: 12vw !important;
-    }
-
 }
 
 @media (max-width:520px) {
@@ -1257,11 +1253,6 @@ header ul li:last-child {
         margin-top: .9rem;
     }
 
-    .overlay .card {
-        max-width: 80% !important;
-        left: 10% !important;
-    }
-
 }
 
 .overlay {
@@ -1284,8 +1275,8 @@ header ul li:last-child {
     padding-top: .7rem;
     border-radius: 10px;
     z-index: 3000;
-    max-width: 30rem;
-    left: 29vw;
+    width: 50%;
+    left: 25%;
 
 }
 
@@ -1306,7 +1297,7 @@ header ul li:last-child {
     cursor: pointer;
 }
 
-.card_body p{
+.card_body p {
     font-size: .8rem;
     color: #585857;
 }
@@ -1323,4 +1314,18 @@ header ul li:last-child {
 .card_flex a {
     font-size: .7rem;
     text-decoration: underline;
+}
+
+
+@media (max-width: 400px) {
+    .overlay ._card {
+        width: 80%;
+        left: 10%;
+    }
+
+    .btn,
+    button {
+        width: auto;
+    }
+
 }
