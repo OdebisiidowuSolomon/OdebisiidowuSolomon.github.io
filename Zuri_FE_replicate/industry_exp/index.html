@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onscroll="alert('Hii')">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet">
+    <script src="./app.js" defer></script>
 </head>
 
 <body>
@@ -20,11 +21,11 @@
             </div>
             <div class="header_right">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#impact">Impact</a></li>
-                    <li><a href="#why-us">Why us</a></li>
+                    <li id="_home"><a href="#">Home</a></li>
+                    <li id="_impact"><a href="#impact">Impact</a></li>
+                    <li id="_whyus"><a href="#why-us">Why us</a></li>
                 </ul>
-                <button class="header_btn">Hire talents</button>
+                <button id="hire-talents" class="header_btn">Hire talents</button>
             </div>
         </div>
     </header>
@@ -43,8 +44,8 @@
                     <div class="sect1_btn_flex" style="    display: flex;
                     justify-content: center;
                 ">
-                        <button style="background: #e7332b;" class="sect1_hire">Hire Talent</button>
-                        <button style="background: #585858;" class="sect1_talent">Join Talent pool</button>
+                        <button id="hire-talents" style="background: #e7332b;" class="sect1_hire">Hire Talents</button>
+                        <button id="join-pool" style="background: #585858;" class="sect1_talent">Join Talent pool</button>
                     </div>
                 </div>
             </div>
@@ -174,8 +175,8 @@
                 <div class="sect1_btn_flex" style="    display: flex;
                 justify-content: center;
             ">
-                    <button style="background: #e7332b;" class="sect1_hire">Hire Talent</button>
-                    <button style="background: #585858;" class="sect1_talent">Join Talent pool</button>
+                    <button id="hire-talents" style="background: #e7332b;" class="sect1_hire">Hire Talents</button>
+                    <button id="join-pool" style="background: #585858;" class="sect1_talent">Join Talent pool</button>
                 </div>
             </div>
         </div>

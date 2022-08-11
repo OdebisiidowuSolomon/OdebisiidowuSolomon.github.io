@@ -4,7 +4,6 @@ const sections = document.getElementsByClassName('sect7_section')
 
 function handleClick(e) {
     let index = 1
-    console.log(e.path)
     if (e.path[0].localName != 'div') {
         index = 2
     }
@@ -22,8 +21,8 @@ for (let element of sections) {
 
 const sect8_li_spans = document.querySelectorAll('.sect8_left ul li span')
 
-function removeOverlay(...e) {
-    if (this) {
+function removeOverlay(e) {
+    if (e.path[0].className == 'overlay'||e.path[0].localName == 'img') {
         this.style.display = 'none'
         document.body.removeChild(this)
     }
@@ -44,15 +43,17 @@ function handleShow(title, body) {
         <p>What do we mean by this?</p>
         <br />
         <p>${body}</p>
+        <div class="card_flex">
+        <a href="../industry_exp">Industry Page</a>
+        <a href="../landing_page">Landing Page</a>
+    </div>
+
     </div>
     `
 
-    // card.style.left = (document.body.clientWidth - card.style.width) / 2
-
-
     overlay.appendChild(card)
     overlay.addEventListener('click', removeOverlay.bind(overlay))
-    document.body.appendChild(overlay,)
+    document.body.appendChild(overlay)
 }
 
 for (let span of sect8_li_spans) {

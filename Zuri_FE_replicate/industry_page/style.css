@@ -744,6 +744,7 @@ header ul li:last-child {
     margin-left: .5rem;
     display: flex;
     font-family: monospace !important;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
 }
@@ -1299,11 +1300,25 @@ header ul li:last-child {
     color: #585857;
 }
 
+.card_sect1 h2 {
+    font-size: 1.2rem;
+    color: #585857;
+}
+
 .card_sect1 .cancel {
     font-size: 50px;
 }
 
-.card_body {
-    font-size: .7rem;
+.card_body p{
+    font-size: .8rem;
     color: #585857;
+}
+
+.card_flex {
+    margin-top: 1.7rem;
+    color: #585857;
+}
+
+.card_flex a {
+    font-size: .7rem;
 }

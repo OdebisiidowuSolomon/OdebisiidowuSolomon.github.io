@@ -11,6 +11,8 @@ html {
 body {
     letter-spacing: 0.00938em;
     font-family: 'Graphik';
+    position: relative;
+    height: 99.9%;
 }
 
 
@@ -63,9 +65,12 @@ a {
     font-size: 1.15rem;
 }
 
-.header_right ul li:first-child {
+.active {
     border-bottom: 3px solid #e7332b;
 }
+
+/* .header_right ul li:first-child {
+} */
 
 .header_right button {
     padding: 11px 35px;
@@ -538,6 +543,10 @@ footer {
         margin-bottom: -.3rem;
     }
 
+    .overlay .card {
+        width: 67vw !important;
+        left: 20vw !important;
+    }
 
 }
 
@@ -591,4 +600,66 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .overlay .card {
+        max-width: 30rem !important;
+        left: 17vw !important;
+    }
+
+
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    z-index: 2000;
+}
+
+.overlay .card {
+    position: fixed;
+    top: 30%;
+    background-color: #fff;
+    padding: 1.2rem;
+    padding-top: .7rem;
+    padding: 70px 44px;
+    border-radius: 10px;
+    z-index: 3000;
+    width: 40vw;
+    left: 29vw;
+    text-align: center;
+}
+
+.overlay .card h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.overlay .card p,
+.overlay .card span {
+    font-size: 1.2rem;
+    padding-top: 10px;
+    width: 70%;
+    margin: auto;
+    color: #787878;
+}
+
+.overlay .card button {
+    padding: 11px 50px;
+    background-color: #e7332b;
+    color: #fff;
+    border-radius: 0px 0px 8px 0;
+    margin-top: .6rem;
+    border: none;
+}
+
+.card_flex {
+    margin-top: 1.7rem;
+    color: #585857;
 }
